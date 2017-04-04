@@ -1,0 +1,562 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/yahoo/react-intl">react-intl (v2.2.3)</a>
+</h1>
+<h4>Internationalize React apps. This library provides React components and an API to format dates, numbers, and strings, including pluralization and handling translations.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-intl">module react-intl</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.FormattedDate">
+            function <span class="apidocSignatureSpan">react-intl.</span>FormattedDate
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.FormattedHTMLMessage">
+            function <span class="apidocSignatureSpan">react-intl.</span>FormattedHTMLMessage
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.FormattedMessage">
+            function <span class="apidocSignatureSpan">react-intl.</span>FormattedMessage
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.FormattedNumber">
+            function <span class="apidocSignatureSpan">react-intl.</span>FormattedNumber
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.FormattedPlural">
+            function <span class="apidocSignatureSpan">react-intl.</span>FormattedPlural
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.FormattedRelative">
+            function <span class="apidocSignatureSpan">react-intl.</span>FormattedRelative
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.FormattedTime">
+            function <span class="apidocSignatureSpan">react-intl.</span>FormattedTime
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.IntlProvider">
+            function <span class="apidocSignatureSpan">react-intl.</span>IntlProvider
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.addLocaleData">
+            function <span class="apidocSignatureSpan">react-intl.</span>addLocaleData
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.defineMessages">
+            function <span class="apidocSignatureSpan">react-intl.</span>defineMessages
+            <span class="apidocSignatureSpan">(messageDescriptors)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.injectIntl">
+            function <span class="apidocSignatureSpan">react-intl.</span>injectIntl
+            <span class="apidocSignatureSpan">(WrappedComponent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.intlShape">
+            function <span class="apidocSignatureSpan">react-intl.</span>intlShape
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-intl.intlShape">module react-intl.intlShape</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.intlShape.intlShape">
+            function <span class="apidocSignatureSpan">react-intl.</span>intlShape
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-intl.intlShape.isRequired">
+            function <span class="apidocSignatureSpan">react-intl.intlShape.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-intl" id="apidoc.module.react-intl">module react-intl</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.FormattedDate" id="apidoc.element.react-intl.FormattedDate">
+        function <span class="apidocSignatureSpan">react-intl.</span>FormattedDate
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function FormattedDate(props, context) {
+    classCallCheck(this, FormattedDate);
+
+    var _this = possibleConstructorReturn(this, (FormattedDate.__proto__ || Object.getPrototypeOf(FormattedDate)).call(this, props
+, context));
+
+    invariantIntlContext(context);
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.FormattedHTMLMessage" id="apidoc.element.react-intl.FormattedHTMLMessage">
+        function <span class="apidocSignatureSpan">react-intl.</span>FormattedHTMLMessage
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function FormattedHTMLMessage(props, context) {
+    classCallCheck(this, FormattedHTMLMessage);
+
+    var _this = possibleConstructorReturn(this, (FormattedHTMLMessage.__proto__ || Object.getPrototypeOf(FormattedHTMLMessage)).
+call(this, props, context));
+
+    invariantIntlContext(context);
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.FormattedMessage" id="apidoc.element.react-intl.FormattedMessage">
+        function <span class="apidocSignatureSpan">react-intl.</span>FormattedMessage
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function FormattedMessage(props, context) {
+    classCallCheck(this, FormattedMessage);
+
+    var _this = possibleConstructorReturn(this, (FormattedMessage.__proto__ || Object.getPrototypeOf(FormattedMessage)).call(this
+, props, context));
+
+    invariantIntlContext(context);
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.FormattedNumber" id="apidoc.element.react-intl.FormattedNumber">
+        function <span class="apidocSignatureSpan">react-intl.</span>FormattedNumber
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function FormattedNumber(props, context) {
+    classCallCheck(this, FormattedNumber);
+
+    var _this = possibleConstructorReturn(this, (FormattedNumber.__proto__ || Object.getPrototypeOf(FormattedNumber)).call(this,
+props, context));
+
+    invariantIntlContext(context);
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.FormattedPlural" id="apidoc.element.react-intl.FormattedPlural">
+        function <span class="apidocSignatureSpan">react-intl.</span>FormattedPlural
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function FormattedPlural(props, context) {
+    classCallCheck(this, FormattedPlural);
+
+    var _this = possibleConstructorReturn(this, (FormattedPlural.__proto__ || Object.getPrototypeOf(FormattedPlural)).call(this,
+props, context));
+
+    invariantIntlContext(context);
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.FormattedRelative" id="apidoc.element.react-intl.FormattedRelative">
+        function <span class="apidocSignatureSpan">react-intl.</span>FormattedRelative
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function FormattedRelative(props, context) {
+    classCallCheck(this, FormattedRelative);
+
+    var _this = possibleConstructorReturn(this, (FormattedRelative.__proto__ || Object.getPrototypeOf(FormattedRelative)).call(this
+, props, context));
+
+    invariantIntlContext(context);
+
+    var now = isFinite(props.initialNow) ? Number(props.initialNow) : context.intl.now();
+
+    // `now` is stored as state so that `render()` remains a function of
+    // props + state, instead of accessing `Date.now()` inside `render()`.
+    _this.state = { now: now };
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.FormattedTime" id="apidoc.element.react-intl.FormattedTime">
+        function <span class="apidocSignatureSpan">react-intl.</span>FormattedTime
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function FormattedTime(props, context) {
+    classCallCheck(this, FormattedTime);
+
+    var _this = possibleConstructorReturn(this, (FormattedTime.__proto__ || Object.getPrototypeOf(FormattedTime)).call(this, props
+, context));
+
+    invariantIntlContext(context);
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.IntlProvider" id="apidoc.element.react-intl.IntlProvider">
+        function <span class="apidocSignatureSpan">react-intl.</span>IntlProvider
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function IntlProvider(props) {
+    var context = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
+    classCallCheck(this, IntlProvider);
+
+    var _this = possibleConstructorReturn(this, (IntlProvider.__proto__ || Object.getPrototypeOf(IntlProvider)).call(this, props
+, context));
+
+    invariant(typeof Intl !== 'undefined', '[React Intl] The `Intl` APIs must be available in the runtime, ' + 'and do not appear
+ to be built-in. An `Intl` polyfill should be loaded.\n' + 'See: http://formatjs.io/guides/runtime-environments/');
+
+    var intlContext = context.intl;
+
+    // Used to stabilize time when performing an initial rendering so that
+    // all relative times use the same reference "now" time.
+
+    var initialNow = void 0;
+    if (isFinite(props.initialNow)) {
+        initialNow = Number(props.initialNow);
+    } else {
+        // When an `initialNow` isn't provided via `props`, look to see an
+        // &lt;IntlProvider&gt; exists in the ancestry and call its `now()`
+        // function to propagate its value for "now".
+        initialNow = intlContext ? intlContext.now() : Date.now();
+    }
+
+    // Creating `Intl*` formatters is expensive. If there's a parent
+    // `&lt;IntlProvider&gt;`, then its formatters will be used. Otherwise, this
+    // memoize the `Intl*` constructors and cache them for the lifecycle of
+    // this IntlProvider instance.
+
+    var _ref = intlContext || {},
+        _ref$formatters = _ref.formatters,
+        formatters = _ref$formatters === undefined ? {
+        getDateTimeFormat: memoizeIntlConstructor(Intl.DateTimeFormat),
+        getNumberFormat: memoizeIntlConstructor(Intl.NumberFormat),
+        getMessageFormat: memoizeIntlConstructor(IntlMessageFormat),
+        getRelativeFormat: memoizeIntlConstructor(IntlRelativeFormat),
+        getPluralFormat: memoizeIntlConstructor(IntlPluralFormat)
+    } : _ref$formatters;
+
+    _this.state = _extends({}, formatters, {
+
+        // Wrapper to provide stable "now" time for initial render.
+        now: function now() {
+            return _this._didDisplay ? Date.now() : initialNow;
+        }
+    });
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.addLocaleData" id="apidoc.element.react-intl.addLocaleData">
+        function <span class="apidocSignatureSpan">react-intl.</span>addLocaleData
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function addLocaleData() {
+    var data = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : [];
+
+    var locales = Array.isArray(data) ? data : [data];
+
+    locales.forEach(function (localeData) {
+        if (localeData &amp;&amp; localeData.locale) {
+            IntlMessageFormat.__addLocaleData(localeData);
+            IntlRelativeFormat.__addLocaleData(localeData);
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.defineMessages" id="apidoc.element.react-intl.defineMessages">
+        function <span class="apidocSignatureSpan">react-intl.</span>defineMessages
+        <span class="apidocSignatureSpan">(messageDescriptors)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function defineMessages(messageDescriptors) {
+  // This simply returns what's passed-in because it's meant to be a hook for
+  // babel-plugin-react-intl.
+  return messageDescriptors;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.injectIntl" id="apidoc.element.react-intl.injectIntl">
+        function <span class="apidocSignatureSpan">react-intl.</span>injectIntl
+        <span class="apidocSignatureSpan">(WrappedComponent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function injectIntl(WrappedComponent) {
+    var options = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
+    var _options$intlPropName = options.intlPropName,
+        intlPropName = _options$intlPropName === undefined ? 'intl' : _options$intlPropName,
+        _options$withRef = options.withRef,
+        withRef = _options$withRef === undefined ? false : _options$withRef;
+
+    var InjectIntl = function (_Component) {
+        inherits(InjectIntl, _Component);
+
+        function InjectIntl(props, context) {
+            classCallCheck(this, InjectIntl);
+
+            var _this = possibleConstructorReturn(this, (InjectIntl.__proto__ || Object.getPrototypeOf(InjectIntl)).call(this, props
+, context));
+
+            invariantIntlContext(context);
+            return _this;
+        }
+
+        createClass(InjectIntl, [{
+            key: 'getWrappedInstance',
+            value: function getWrappedInstance() {
+                invariant(withRef, '[React Intl] To access the wrapped instance, ' + 'the `{withRef: true}` option must be set when
+ calling: ' + '`injectIntl()`');
+
+                return this.refs.wrappedInstance;
+            }
+        }, {
+            key: 'render',
+            value: function render() {
+                return React__default.createElement(WrappedComponent, _extends({}, this.props, defineProperty({}, intlPropName,
+this.context.intl), {
+                    ref: withRef ? 'wrappedInstance' : null
+                }));
+            }
+        }]);
+        return InjectIntl;
+    }(React.Component);
+
+    InjectIntl.displayName = 'InjectIntl(' + getDisplayName(WrappedComponent) + ')';
+    InjectIntl.contextTypes = {
+        intl: intlShape
+    };
+    InjectIntl.WrappedComponent = WrappedComponent;
+
+
+    return InjectIntl;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.intlShape" id="apidoc.element.react-intl.intlShape">
+        function <span class="apidocSignatureSpan">react-intl.</span>intlShape
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">intlShape = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-intl.intlShape" id="apidoc.module.react-intl.intlShape">module react-intl.intlShape</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.intlShape.intlShape" id="apidoc.element.react-intl.intlShape.intlShape">
+        function <span class="apidocSignatureSpan">react-intl.</span>intlShape
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">intlShape = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-intl.intlShape.isRequired" id="apidoc.element.react-intl.intlShape.isRequired">
+        function <span class="apidocSignatureSpan">react-intl.intlShape.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
