@@ -1,6 +1,6 @@
 # npmdoc-react-intl
 
-#### api documentation for  [react-intl (v2.2.3)](https://github.com/yahoo/react-intl)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-intl.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-intl) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-intl.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-intl)
+#### basic api documentation for  [react-intl (v2.2.3)](https://github.com/yahoo/react-intl)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-intl.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-intl) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-intl.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-intl)
 
 #### Internationalize React apps. This library provides React components and an API to format dates, numbers, and strings, including pluralization and handling translations.
 
@@ -186,7 +186,8 @@
         "test:react": "npm run react:14 && jest && npm run react:15 && jest",
         "test:watch": "jest --watch"
     },
-    "version": "2.2.3"
+    "version": "2.2.3",
+    "bin": {}
 }
 ```
 
